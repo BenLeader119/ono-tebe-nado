@@ -1,0 +1,355 @@
+.letter-spacing-extended {
+  letter-spacing: 60px;
+}
+
+.no-letter-spacing {
+  letter-spacing: normal;
+}
+
+.aligned-text,
+.aligned-text_center,
+.aligned-text_right {
+  display: block;
+}
+
+.aligned-text {
+  z-index: 1;
+  text-align: left;
+}
+
+.aligned-text_center {
+  z-index: 1;
+  text-align: center;
+}
+
+.aligned-text_right {
+  z-index: 1;
+  text-align: right;
+}
+
+.header {
+  padding: 94px 24px 90px;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.header__menu-nav {
+  margin-left: 27px;
+  display: flex;
+  gap: 32px;
+  list-style: circle;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.header__menu-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+.header__menu-item-active {
+  list-style: none;
+}
+
+.custom-link {
+  text-decoration: none; /* Убирает стандартное подчеркивание */
+  border-bottom: 1px solid #000; /* Добавляет нижнюю границу. Замените #000 на нужный цвет */
+  padding-bottom: 1px; /* Добавляет отступ для нижней границы, чтобы она не прилипала к тексту */
+}
+
+.custom-link:hover {
+  border-bottom-color: rgb(0, 0, 0);
+}
+
+.header__menu-active-link {
+  list-style: none;
+  text-decoration: none;
+}
+
+.menu__logo-black {
+  margin: 0px 36px 0px;
+  width: 154px;
+  height: 105px;
+}
+
+.header__adress {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  margin-left: 147px;
+  list-style: none;
+}
+
+.cover {
+  position: relative;
+  padding: 173px 50px 50px 50px;
+  color: #fff;
+  background-color: #a7a7a7;
+  background-image: url("../images/cover.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.overlay {
+  background-color: rgb(0 0 0 / 0.6);
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.cover__title {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  margin-bottom: 135px;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100%;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cover__description-text {
+  z-index: 1;
+  margin-right: 80px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  word-spacing: 18px;
+}
+
+.bet-button {
+  z-index: 1;
+  border: 1px solid #fff;
+  padding: 12px 32px;
+  color: inherit;
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  background: transparent;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.section__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+  color: #000000;
+}
+
+.lots {
+  padding: 179px 24px 0px;
+}
+
+.lots__heading {
+  padding-left: 40px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.lots__card-list {
+  padding-top: 24px;
+  margin-bottom: 30px;
+  gap: 25px;
+  display: flex;
+  flex-wrap: nowrap;
+  list-style: none;
+}
+
+.lots__card-list-item {
+  flex-grow: 1;
+  max-width: 334px;
+  min-height: 563px;
+}
+
+.card-link {
+  display: block;
+  position: relative;
+  height: 100%;
+  text-decoration: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  height: 100%;
+  padding: 51px 40px 48px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card_type_film {
+  background-image: url("../images/card-lot-01.jpg");
+}
+
+.card_type_book {
+  background-image: url("../images/card-lot-02.jpg");
+}
+
+.card_type_picture {
+  background-image: url("../images/card-lot-03.jpg");
+}
+
+.card__title {
+  z-index: 1;
+  font-size: 23px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.card__text {
+  z-index: 1;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #ffffff;
+}
+
+.lots__look-more-link {
+  margin: 0 0 0 40px;
+  font-size: 20px;
+}
+
+.about {
+  padding: 181px 24px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  place-content: space-between start;
+  box-sizing: content-box;
+  margin-bottom: 180px;
+}
+
+.about__column-logo {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  justify-self: center;
+}
+
+.about__logo {
+  background-color: #000;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+}
+
+.about__column {
+  grid-column-start: 2;
+  grid-column-end: span 2;
+}
+
+.about__title {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 46.96px;
+  padding-top: 101px;
+  padding-bottom: 100px;
+}
+
+.about__text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.07px;
+}
+
+.about__text-first {
+  padding-bottom: 25px;
+}
+
+.footer {
+  font-style: normal;
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  margin: 0px 44px 88px 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__address {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer__address-list {
+  font-style: normal;
+}
+
+.footer__menu {
+  padding: 0px 90px 32px 0px;
+  text-align: center;
+  padding-left: 134px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.footer__menu-roster {
+  list-style: none;
+}
+
+.custom-link {
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+  padding-bottom: 1px;
+}
+
+.active-link {
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.footer__socials {
+  padding: 0 0 48px 0;
+}
+
+.footer__socials-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 3px 6px 0px 6px;
+  gap: 48px;
+}
+
+.footer__socials-icon {
+  width: 48px;
+  height: 48px;
+}
